@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>My Playlists</h1>
+        {% for playlist in my_playlists %}
+        <p> Name: {{ playlist.name }}</p>
+        {% endfor %}
+      </div>
+      <div class="col">
+        <h2>Rome's Playlists</h2>
+        {% for playlist in other_playlists %}
+        <p> Name: {{ playlist.name }}</p>
+        {% endfor %}
+      </div>
+      
+    </div>
+  </div>
+{% endblock %}
